@@ -1,3 +1,4 @@
+/* Header styles */
 .header {
     display: flex;
     align-items: center;
@@ -45,13 +46,75 @@
 /* Line below the header */
 .header-line {
     width: 100%;
-    height: 1px; /* Thickness of the line */
-    background-color: #f5c32c; /* Line color */
+    height: 1px;
+    background-color: #f5c32c;
     position: fixed;
     top: 70px; /* Adjust this based on the header height */
-    z-index: 9; /* Place it right below the header */
+    z-index: 9;
 }
-.nav-icon{
-    gap: 2rem;
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .nav-left-up, .nav-right-up {
+        gap: 3rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .nav-left-up, .nav-right-up {
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .nav-left-up, .nav-right-up {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-link, .nav-button {
+        font-size: 0.9rem;
+    }
+}
+/* src/components/Header.css */
+
+.header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .header, .header-line {
+        display: none; /* Hide header on mobile */
+    }
 }
