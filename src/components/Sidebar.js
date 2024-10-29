@@ -18,14 +18,11 @@ const Sidebar = () => {
 
       <div className={`sidebar ${isOpen ? 'open' : ''}`}>
         <div className="sidebar-content">
-          <Link to="/accommodation" className="nav-link" onClick={toggleSidebar}>Accommodation</Link>
+        <Link to="/about" className="nav-link" onClick={toggleSidebar}>About Us</Link>
           <Link to="/events" className="nav-link" onClick={toggleSidebar}>Events</Link>
           <Link to="/workshops" className="nav-link" onClick={toggleSidebar}>Workshops</Link>
           <Link to="/team" className="nav-link" onClick={toggleSidebar}>Team</Link>
-          <Link to="/profile" className="nav-link" onClick={toggleSidebar}>Profile</Link>
-          <Link to="/signin" className="nav-button" onClick={toggleSidebar}>Sign In</Link>
           <Link to="/contact" className="nav-link" onClick={toggleSidebar}>Contact Us</Link>
-          <Link to="/about" className="nav-link" onClick={toggleSidebar}>About Us</Link>
           <Link to="/faq" className="nav-link" onClick={toggleSidebar}>FAQ</Link>
         </div>
       </div>

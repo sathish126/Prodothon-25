@@ -7,22 +7,22 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <div className="nav-left-up">
-          <Link to="/accommodation" className="nav-link">Accommodation</Link>
-          <Link to="/events" className="nav-link">Events</Link>
-          <Link to="/workshops" className="nav-link">Workshops</Link>
+        <div className="logo-container">
+          <img src={`${process.env.PUBLIC_URL}/img/psg_logo.png`} alt="PSG Logo" className="logo" />
+          <img src={`${process.env.PUBLIC_URL}/img/PEA_Logo.png`} alt="PEA Logo" className="logo" />
+          <img src={`${process.env.PUBLIC_URL}/img/sme_logo.png`} alt="SME Logo" className="logo" />
         </div>
 
-        <div className="logo">Logo-Prodothon'25</div>
-
         <div className="nav-right-up">
+          <Link to="/about" className="nav-link">About Us</Link>
+          <Link to="/events" className="nav-link">Events</Link>
+          <Link to="/workshops" className="nav-link">Workshops</Link>
           <Link to="/team" className="nav-link">Team</Link>
-          <Link to="/profile" className="nav-link">Profile</Link>
-          <Link to="/signin" className="nav-button">Sign In</Link>
+          <Link to="/contact" className="nav-link">Contact Us</Link>
+          <Link to="/faq" className="nav-link">FAQ</Link>
         </div>
       </header>
 
-      {/* Line below the header */}
       <div className="header-line"></div>
     </>
   );
