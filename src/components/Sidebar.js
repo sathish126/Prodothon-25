@@ -21,7 +21,7 @@ const Sidebar = () => {
           <Link to="/accommodation" className="nav-link" onClick={toggleSidebar}>Accommodation</Link>
           <Link to="/events" className="nav-link" onClick={toggleSidebar}>Events</Link>
           <Link to="/workshops" className="nav-link" onClick={toggleSidebar}>Workshops</Link>
-          <Link to="/competitions" className="nav-link" onClick={toggleSidebar}>Competitions</Link>
+          <Link to="/team" className="nav-link" onClick={toggleSidebar}>Team</Link>
           <Link to="/profile" className="nav-link" onClick={toggleSidebar}>Profile</Link>
           <Link to="/signin" className="nav-button" onClick={toggleSidebar}>Sign In</Link>
           <Link to="/contact" className="nav-link" onClick={toggleSidebar}>Contact Us</Link>

@@ -7,6 +7,7 @@ import Sidebar from './components/Sidebar';
 import './App.css';
 import Particle from './Particle';
 
+
 function App() {
     const eventDate = new Date('2025-02-01T00:00:00');
 

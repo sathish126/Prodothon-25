@@ -16,7 +16,7 @@ const Header = () => {
         <div className="logo">Logo-Prodothon'25</div>
 
         <div className="nav-right-up">
-          <Link to="/competitions" className="nav-link">Competitions</Link>
+          <Link to="/team" className="nav-link">Team</Link>
           <Link to="/profile" className="nav-link">Profile</Link>
           <Link to="/signin" className="nav-button">Sign In</Link>
         </div>
